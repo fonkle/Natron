@@ -1270,7 +1270,10 @@ if [ ! -s "$SDK_HOME/osmesa/lib/pkgconfig/gl.pc" ] || [ "$(env PKG_CONFIG_PATH=$
         download "$OSMESA_LLVM_SITE" "$OSMESA_LLVM_TAR"
         mkdir -p "${SDK_HOME}/llvm" || true
     fi
-    git clone https://github.com/devernay/osmesa-install
+    
+    #git clone https://github.com/devernay/osmesa-install
+    git clone https://github.com/fonkle/osmesa-install
+  
     pushd osmesa-install
     mkdir build
     pushd build
