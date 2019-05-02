@@ -1271,9 +1271,8 @@ if [ ! -s "$SDK_HOME/osmesa/lib/pkgconfig/gl.pc" ] || [ "$(env PKG_CONFIG_PATH=$
         mkdir -p "${SDK_HOME}/llvm" || true
     fi
     
-    #git clone https://github.com/devernay/osmesa-install
-    git clone -b LLVM-add-ORC-patch https://github.com/fonkle/osmesa-install
-  
+    git clone https://github.com/devernay/osmesa-install
+    
     pushd osmesa-install
     mkdir build
     pushd build
